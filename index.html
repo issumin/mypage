@@ -84,8 +84,7 @@
     .then(res => res.json())
     .then(data => {
       let temperature = data['temp'];
-      $('#temp').empty();
-      $('#temp').append(temperature);
+      $('#temp').text(temperature);
     })
 })
   </script>
